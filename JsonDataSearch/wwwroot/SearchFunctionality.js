@@ -11,7 +11,8 @@ $(document).ready(function () {
         $.getJSON('rapunzelproducts.json', function (data) { 
             $.each(data, function (key, value) {
                 if (value.name.search(expression) != -1) { 
-                    $('#result').append(+ value.name + ' | <span class="text-muted">' + value.color - calc + '</span></li>');
+                    $('#result').append(+ value.name + ' | <span>' + value.color - calc + '</span> '
+                        + ' | <span>' + value.color_caption - calc + '</span></li>');
                 }
             });
         });
