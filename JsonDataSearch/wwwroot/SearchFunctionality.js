@@ -12,7 +12,7 @@ $(document).ready(function () {
             $.each(data, function (key, value) {
                 if (value.name.search(expression) != -1) { 
                     $('#result').append(+ value.name + ' | <span>' + value.color - calc + '</span> '
-                        + ' | <span>' + value.color_caption - calc + '</span></li>');
+                        + ' | <span>' + value.color_caption - calc +  '</span></li>');
                 }
             });
         });
