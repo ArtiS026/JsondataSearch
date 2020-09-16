@@ -14,7 +14,7 @@ namespace JsonDataSearch.Controllers
         private IHostingEnvironment _env;
         public DataSearch(IHostingEnvironment env)
         {
-            _env = env;
+            _env = env; 
         }
 
         // GET api/values
